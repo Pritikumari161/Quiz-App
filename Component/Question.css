@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #4a90e2, #50c878);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+/* Container Styling */
+div {
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Question Title */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+/* Button Styling */
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #ff7eb3, #ff758f);
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #ff758f, #ff4b6b);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: linear-gradient(135deg, #ff4b6b, #ff304f);
+}
+
+/* Answer Buttons */
+button:nth-of-type(1),
+button:nth-of-type(2),
+button:nth-of-type(3),
+button:nth-of-type(4) {
+    width: 80%;
+    margin: 10px auto;
+    display: block;
+}
+
+/* Next and Submit Buttons */
+button:nth-of-type(5),
+button:nth-of-type(6) {
+    display: inline-block;
+    width: 40%;
+}
+
+/* Previous Button */
+button:nth-of-type(7) {
+    width: 40%;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    button {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    div {
+        width: 90%;
+    }
+}
